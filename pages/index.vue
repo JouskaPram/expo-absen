@@ -4,7 +4,10 @@ const datas = ref([]);
 const loading = ref(true);
 async function getAbsen() {
   loading.value = true;
-  const { data, error } = await supabase.from("absen_expo").select().limit(10);
+  const { data, error } = await supabase
+    .from("absen_expo")
+    .select()
+    .order("id", { ascending: false });
   datas.value = data;
   loading.value = false;
 }
@@ -42,7 +45,7 @@ onMounted(() => {
               </p>
             </div>
             <div
-              class="w-36 h-32 ml-auto bg-sky-600 rounded-md shadow-sm text-center flex justify-center items-center align-middle"
+              class="w-36 h-32 ml-auto bg-sky-500 rounded-md shadow-sm text-center flex justify-center items-center align-middle"
             >
               <div class="p-3">
                 <div v-if="datas.length < 1" class="mb-5 text-xl text-white">
@@ -73,7 +76,7 @@ onMounted(() => {
                 >
                   <em>sedang memuat...</em>
                 </td>
-                <thead class="bg-sky-600 rounded-l-md rounded-r-md">
+                <thead class="bg-sky-500 rounded-l-md rounded-r-md">
                   <tr>
                     <th
                       class="text-gray-100 border-gray-200 py-2 px-4 rounded-tl-md"
