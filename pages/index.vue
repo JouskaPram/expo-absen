@@ -21,27 +21,29 @@ onMounted(() => {
 <template>
   <div class="bg-[#f2f4f6] md:h-screen">
     <div class="container">
-      <div class="grid grid-cols-4 gap-6 pt-10">
+      <div class="grid grid-cols-4 gap-6 pt-10 w-full">
         <div class="col-span-4">
           <div
-            class="w-full rounded-md bg-[#fffffe] shadow-sm px-10 py-10 flex flex-wrap align-middle items-center"
+            class="w-full rounded-md bg-[#fffffe] shadow-sm md:px-10 md:py-10 p-5 flex flex-wrap align-middle items-center"
           >
             <img
               src="@/assets/img/logo.png"
               alt=""
               srcset=""
-              class="w-32 h-32 flex"
+              class="md:w-32 md:h-32 w-12 h-12 flex"
             />
             <div class="mx-5">
-              <h3 class="font-extrabold text-2xl text-[#]">
-                Buku Absen • EXPO <span class="text-sky-500">2023</span>
+              <h3 class="font-extrabold text-md md:text-2xl text-[#]">
+                Buku Tamu • EXPO <span class="text-sky-500">2023</span>
               </h3>
-              <h3 class="text-left font-bold text-[#00214d] text-2xl">
+              <h3
+                class="text-left font-bold text-[#00214d] text-lg md:text-2xl"
+              >
                 SMKN 4 Tasimalaya
               </h3>
 
               <p class="text-left font-semibold text-[#1b2d45]">
-                Jl.Depo No.31
+                Jl.Depok No.31
               </p>
             </div>
             <div
