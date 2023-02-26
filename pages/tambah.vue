@@ -27,18 +27,19 @@
               </svg>
             </div>
             <div class="ml-3">
-              <p class="text-sm font-medium">{{ alert.message }}</p>
+              <p class="text-sm font-medium">
+                {{ alert.message }}
+                <button
+                  type="button"
+                  class="ml-3 bg-transparent text-sm font-extrabold rounded-lg bg-success-100"
+                  data-bs-dismiss="alert"
+                  @click="datas.splice(index, 1)"
+                >
+                  &times;
+                </button>
+              </p>
             </div>
           </div>
-          <!-- <button
-            
-            type="button"
-            class="ml-3 bg-transparent text-3xl rounded-lg bg-success-100"
-            data-bs-dismiss="alert"
-            @click="datas.splice(index, 1)"
-          >
-            &times;
-          </button> -->
         </div>
       </div>
     </div>
@@ -156,6 +157,9 @@ async function tambahAbsen() {
     const alert = {
       message: "sukses di tambahkan",
     };
+    setTimeout(() => {
+      message;
+    }, 2000);
     datas.value.push(alert);
   }
   nama.value = "";
