@@ -53,7 +53,7 @@
         class="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem] opacity-70"
       />
     </div>
-    <div class="mx-auto max-w-2xl text-center">
+    <div class="mx-auto max-w-2xl text-center mt-5">
       <h2
         class="font-extrabold text-5xl sm:text-4xl text-gradient-to-r from-blue-500 to-gray-900"
       >
