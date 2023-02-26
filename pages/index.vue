@@ -19,7 +19,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="bg-[#f2f4f6] md:h-screen">
+  <div class="bg-[#f2f4f6]">
     <div class="container">
       <div class="grid grid-cols-4 gap-6 pt-10 w-full">
         <div class="col-span-4">

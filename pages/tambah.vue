@@ -80,6 +80,7 @@
               name="first-name"
               id="first-name"
               autocomplete="given-name"
+              required
               v-model="nama"
               class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600"
             />
@@ -96,6 +97,7 @@
               type="text"
               name="last-name"
               id="last-name"
+              required
               autocomplete="family-name"
               v-model="alamat"
               class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600"
@@ -113,6 +115,7 @@
             <textarea
               name="message"
               id="message"
+              required
               rows="4"
               v-model="pesan"
               class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600"
@@ -144,7 +147,7 @@ async function tambahAbsen() {
   const { error } = await supabase.from("absen_expo").insert({
     nama: nama.value,
     asal: alamat.value,
-    email: email.value,
+
     pesan: pesan.value,
   });
   if (error) {
@@ -156,8 +159,7 @@ async function tambahAbsen() {
     datas.value.push(alert);
   }
   nama.value = "";
-  asal.value = "";
-  email.value = "";
+  alamat.value = "";
   pesan.value = "";
 }
 definePageMeta({
