@@ -30,6 +30,7 @@ async function login() {
     email: email.value,
     password: password.value,
   });
+  navigateTo("/tambah");
   console.log(data);
 }
 </script>

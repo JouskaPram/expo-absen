@@ -65,7 +65,7 @@
     <form
       @submit.prevent="tambahAbsen"
       method="POST"
-      class="mx-auto mt-16 max-w-xl sm:mt-20"
+      class="mx-auto mt-5 max-w-xl sm:mt-5"
     >
       <div class="grid grid-cols-2 gap-y-6 gap-x-8">
         <div class="col-span-1">
