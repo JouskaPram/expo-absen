@@ -166,7 +166,4 @@ async function tambahAbsen() {
   alamat.value = "";
   pesan.value = "";
 }
-definePageMeta({
-  middleware: "auth",
-});
 </script>
