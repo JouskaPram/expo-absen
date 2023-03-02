@@ -83,7 +83,7 @@
               autocomplete="given-name"
               required
               v-model="nama"
-              class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500"
+              class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-sky-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500"
             />
           </div>
         </div>
@@ -101,7 +101,7 @@
               required
               autocomplete="family-name"
               v-model="alamat"
-              class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500"
+              class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-sky-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500"
             />
           </div>
         </div>
@@ -119,7 +119,7 @@
               required
               rows="4"
               v-model="pesan"
-              class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500"
+              class="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-sky-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500"
             ></textarea>
           </div>
         </div>
